@@ -18,39 +18,7 @@ modules:
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
 
-  - type: dnf
-    repos:
-      files:
-        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
-    install:
-      packages:
-        - noctalia-shell
-        - ghostty
-
-  - type: dnf
-    install:
-      packages:
-        - niri
-        # Important Software per Niri
-        - fuse-overlayfs
-        - gnome-keyring
-        - nautilus
-        - polkit
-        - lxqt-policykit
-        - qt6ct
-        - qt6-qtwayland
-        - xdg-desktop-portal-gtk
-        - xdg-desktop-portal-gnome
-        - xwayland-satellite
-      exclude:
-        - alacritty
-        - waybar
-        - fuzzel
-    remove:
-      packages:
-        - firefox
-        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
-
+  - from-file: mod-niri.yml
   - from-file: mod-util.yml
   - from-file: mod-pass.yml
   - from-file: mod-netbird.yml
@@ -64,5 +32,12 @@ modules:
         install:
           - org.mozilla.firefox
           - org.gnome.Loupe
+
+  - type: dnf
+    remove:
+      packages:
+        - firefox
+        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
