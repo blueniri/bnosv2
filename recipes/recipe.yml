@@ -21,7 +21,7 @@ modules:
   - type: dnf
     repos:
       files:
-        - https://repos.fyralabs.com/terra%OS_VERSION%
+        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
     install:
       packages:
         - noctalia-shell
