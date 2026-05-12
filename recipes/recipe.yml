@@ -20,8 +20,10 @@ modules:
 
   - type: dnf
     repos:
+      files:
         - https://repos.fyralabs.com/terra%OS_VERSION%
     install:
+      packages:
         - noctalia-shell
 
   - type: dnf
