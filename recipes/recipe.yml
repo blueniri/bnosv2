@@ -46,6 +46,10 @@ modules:
         - alacritty
         - waybar
         - fuzzel
+    remove:
+      packages:
+        - firefox
+        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
   - type: fonts
     fonts:
@@ -65,11 +69,6 @@ modules:
 #        - name: CompanyFonts
 #          url: https://company.com/fonts.zip
 
-
-    remove:
-      packages:
-        - firefox
-        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
   - type: default-flatpaks
     configurations:
