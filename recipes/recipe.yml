@@ -32,8 +32,13 @@ modules:
       packages:
         - niri
         # Important Software per Niri
+        - fuse-overlayfs
         - gnome-keyring
         - nautilus
+        - polkit
+        - lxqt-policykit
+        - qt6ct
+        - qt6-qtwayland
         - xdg-desktop-portal-gtk
         - xdg-desktop-portal-gnome
         - xwayland-satellite
