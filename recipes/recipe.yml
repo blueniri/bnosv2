@@ -18,16 +18,13 @@ modules:
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
   - type: dnf
-    repos:
-      cleanup: true
-      copr:
-       # - ublue-os/packages
-       # - solopasha/hyprland
-       # - lihaohong/yazi
-      nonfree: rpmfusion
     install:
       packages:
         - niri
+      exclude:
+        - alacritty
+        - waybar
+        - fuzzel
 
     remove:
       packages:
