@@ -1,0 +1,32 @@
+modules:
+
+  - type: dnf
+    repos:
+      files:
+        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
+    install:
+      packages:
+        - noctalia-shell
+        - ghostty
+
+  - type: dnf
+    install:
+      packages:
+        - niri
+
+        # Important Software per Niri
+        - fuse-overlayfs
+        - gnome-keyring
+        - nautilus
+        - polkit
+        - lxqt-policykit
+        - qt6ct
+        - qt6-qtwayland
+        - xdg-desktop-portal-gtk
+        - xdg-desktop-portal-gnome
+        - xwayland-satellite
+
+      exclude:
+        - alacritty
+        - waybar
+        - fuzzel
