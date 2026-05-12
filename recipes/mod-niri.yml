@@ -8,6 +8,7 @@ modules:
       packages:
         - niri
         - noctalia-shell
+        - sddm
         - ghostty
 
         # Supporting
