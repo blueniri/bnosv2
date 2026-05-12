@@ -1,0 +1,6 @@
+modules:
+
+  - type: rpm-ostree
+    install:
+      - fontconfig           # Font management
+      - mediawriter          # Fedora Media Writer
