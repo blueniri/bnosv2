@@ -20,6 +20,7 @@ modules:
         - qt6-qtwayland
         - xdg-desktop-portal-gtk
         - xdg-desktop-portal-gnome
+        - xdg-user-dirs
         - xwayland-satellite
 
       exclude:
