@@ -31,6 +31,12 @@ modules:
     install:
       packages:
         - niri
+        # Important Software per Niri
+        - gnome-keyring
+        - nautilus
+        - xdg-desktop-portal-gtk
+        - xdg-desktop-portal-gnome
+        - xwayland-satellite
       exclude:
         - alacritty
         - waybar
