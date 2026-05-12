@@ -51,6 +51,8 @@ modules:
         - firefox
         - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
+  - from-file: mod-netbird.yml
+
   - type: fonts
     fonts:
       nerd-fonts:
