@@ -21,6 +21,7 @@ modules:
         - xdg-desktop-portal-gtk
         - xdg-desktop-portal-gnome
         - xdg-user-dirs
+        - xdg-utils
         - xwayland-satellite
 
       exclude:
