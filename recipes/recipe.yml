@@ -52,24 +52,7 @@ modules:
         - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
   - from-file: mod-netbird.yml
-
-  - type: fonts
-    fonts:
-      nerd-fonts:
-        - FiraCode
-        - Hack
-        - SourceCodePro
-        - Terminus
-        - JetBrainsMono
-        - NerdFontsSymbolsOnly
-      google-fonts:
-        - Roboto
-        - Open Sans
-#      url-fonts:
-#        - name: CustomFont
-#          url: https://example.com/my-font.otf
-#        - name: CompanyFonts
-#          url: https://company.com/fonts.zip
+  - from-file: mod-fonts.yml
 
 
   - type: default-flatpaks
