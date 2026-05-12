@@ -30,8 +30,18 @@ modules:
       - notify: true # Send notification after install/uninstall is finished (true/false)
         scope: user
         install:
+          # Browser
           - org.mozilla.firefox
           - org.gnome.Loupe
+
+          # Chat
+          - org.gajim.Gajim
+          - im.dino.Dino
+
+          # IDE/Text Editing
+          - org.geany.Geany
+          - org.kde.kate
+          - org.kde.kwrite
 
   - type: dnf
     remove:
