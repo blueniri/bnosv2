@@ -6,15 +6,11 @@ modules:
         - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
     install:
       packages:
+        - niri
         - noctalia-shell
         - ghostty
 
-  - type: dnf
-    install:
-      packages:
-        - niri
-
-        # Important Software per Niri
+        # Supporting
         - fuse-overlayfs
         - gnome-keyring
         - nautilus
