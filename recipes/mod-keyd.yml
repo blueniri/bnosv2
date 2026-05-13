@@ -1,0 +1,14 @@
+modules:
+
+  - type: dnf
+    repos:
+      copr:
+        - alternateved/keyd
+    install:
+      packages:
+        - keyd
+
+  - type: systemd
+    system:
+      enabled:
+        - keyd
