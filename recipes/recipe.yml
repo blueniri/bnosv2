@@ -29,7 +29,7 @@ modules:
   - from-file: mod-netbird.yml    # Networking
   - from-file: mod-fonts.yml      # Fonts
   - from-file: mod-flatpak.yml    # User Flatpaks
-  - from-file: mode-mod-keyd.yml  # Swap CAPS/ESC
+  - from-file: mod-keyd.yml       # Swap CAPS/ESC
 
 
 #------------------------------------------------------------------------------
