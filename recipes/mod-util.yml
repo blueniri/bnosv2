@@ -4,3 +4,9 @@ modules:
     install:
       - fontconfig           # Font management
       - mediawriter          # Fedora Media Writer
+      - keyd
+
+  - type: dnf
+    repos:
+      copr:
+        - alternateved/keyd
