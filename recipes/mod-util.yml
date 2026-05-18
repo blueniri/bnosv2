@@ -2,6 +2,11 @@ modules:
 
   - type: rpm-ostree
     install:
+      - ghostty              # Terminal
+      - fish                 # Shell
+      - emacs
+
+    # Utilities
       - fontconfig           # Font management
       - mediawriter          # Fedora Media Writer
       
