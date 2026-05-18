@@ -9,8 +9,6 @@ modules:
         - niri
         - noctalia-shell
         - sddm
-        - ghostty
-        - emacs
 
         # Supporting
         - fuse-overlayfs
