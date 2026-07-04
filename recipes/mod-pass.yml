@@ -2,6 +2,8 @@ modules:
 
   - type: rpm-ostree
     install:
-      - pass
-      - pass-otp
-      - gopass
+      - pass          # Pass
+      - pass-otp      # Pass OTP
+      - gopass        # Go implementation of Pass
+      - pcsc-lite     # Yubikey/Smart Card tooling
+      - age           # File encryption tool
