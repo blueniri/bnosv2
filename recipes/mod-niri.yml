@@ -7,7 +7,7 @@ modules:
     install:
       packages:
         - niri
-        - noctalia-shell
+        - noctalia
         - sddm
 
         # Supporting
